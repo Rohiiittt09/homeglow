@@ -641,7 +641,7 @@ export default function Home() {
     </section>
 
     <section id="contact" className="px-6 an21 pb-24">
-      <div className="reveal max-w-6xl mx-auto rounded-3xl border border-yellow-300/20 bg-gradient-to-br from-yellow-300/10 to-transparent p-8 sm:p-14">
+      <div className=" max-w-6xl mx-auto rounded-3xl border border-yellow-300/20 bg-gradient-to-br from-yellow-300/10 to-transparent p-8 sm:p-14">
 
         <div className="grid lg:grid-cols-2 gap-10 items-center">
 
