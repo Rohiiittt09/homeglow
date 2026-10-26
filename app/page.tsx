@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <div>
 
   
-  <header className="border-b border-white/10">
+  <header className="border-b z-50 fixed top-0 w-screen bg-black/70 border-black">
     <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
       <a href="#home" className="text-xl sm:text-2xl font-extrabold">
         Home<span className="gold">Glow</span>
@@ -28,7 +29,18 @@ export default function Home() {
   <main>
 
     <section id="home" className="hero-bg">
-      <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+      <div className="w-screen h-screen bg-black/60 fixed z-10"></div>
+      <div className=" fixed z-0 w-full h-screen overflow-hidden ">
+      <Image
+  src="/img/bg.png"
+  alt="Home decorative lighting"
+   fill
+    priority
+    sizes="100vw"
+    className="object-cover object-center"
+    
+/></div>
+      <div className="max-w-7xl relative z-10 mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
 
         <div className="reveal">
           <div className="flex items-center gap-2 text-sm gold mb-6">
@@ -83,7 +95,8 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="services" className="py-24 px-6">
+    <div className="bg-black/80 relative z-20">
+      <section id="services" className="py-24  px-6">
       <div className="max-w-7xl mx-auto">
 
         <div className="reveal text-center max-w-2xl mx-auto">
@@ -153,7 +166,7 @@ export default function Home() {
     </section>
 
    
-<section id="work" className="py-24 px-6 bg-white/[0.025] border-y border-white/10">
+<section id="work" className="py-24 px-6   border-y border-white/10">
   <div className="max-w-7xl mx-auto">
 
     <div className="reveal text-center">
@@ -233,7 +246,7 @@ export default function Home() {
 </section>
 
 
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-24  px-6">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
 
         <div className="reveal">
@@ -295,7 +308,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="contact" className="px-6 pb-24">
+    <section id="contact" className="px-6  pb-24">
       <div className="reveal max-w-6xl mx-auto rounded-3xl border border-yellow-300/20 bg-gradient-to-br from-yellow-300/10 to-transparent p-8 sm:p-14">
 
         <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -322,24 +335,26 @@ export default function Home() {
               what type of decoration you need.
             </p>
 
-            <a id="whatsappButton"
-              href="#"
-              className="gold-button block text-center rounded-full py-4 px-5 font-bold mt-6">
+            <div id="whatsappButton"
+              onClick={()=>{window.open( "https://wa.me/9953524978?text=Hi%2C%20I%20want%20to%20book%20home%20decoration%20lights%20installation.",
+    "_blank")}}
+              className="gold-button block cursor-pointer text-center rounded-full py-4 px-5 font-bold mt-6">
               Contact Us on WhatsApp ↗
-            </a>
+            </div>
 
             <p className="text-gray-500 text-xs text-center mt-4">
-              Add your WhatsApp number in the JavaScript below.
+              9953524978 | 8076 098 585
             </p>
           </div>
 
         </div>
       </div>
     </section>
+    </div>
 
   </main>
 
-  <footer className="border-t border-white/10 py-8 px-6 text-center">
+  <footer className="border-t  relative z-20 bg-black/80 border-white/10 py-8 px-6 text-center">
     <h3 className="font-extrabold text-xl">
       Home<span className="gold">Glow</span>
     </h3>
