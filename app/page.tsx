@@ -49,7 +49,7 @@ export default function Home() {
       delay:1,
       scrollTrigger:{
         trigger:".an-im",
-        start:"top 95%"
+        start:"top 80%"
       }
     })
     gsap.from(".an-im12",{
@@ -102,7 +102,7 @@ export default function Home() {
     gsap.from(".an5",{
       opacity:0,
       y:20,
-      delay:0.5,
+      delay:2.4,
       duration:1,
       stagger:0.06,
       scrollTrigger:{
@@ -231,7 +231,7 @@ export default function Home() {
         start:"top 95%"
       }
     })
-    gsap.from(".an21 div",{
+    gsap.from(".an21",{
       opacity:0,
       y:20,
       delay:0.5,
