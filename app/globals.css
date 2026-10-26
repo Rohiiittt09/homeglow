@@ -34,11 +34,10 @@
     }
 
     .reveal {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: opacity .7s, transform .7s;
-    }
-
+  opacity: 1;
+  transform: none;
+  transition: opacity .7s, transform .7s;
+}
     .reveal.show {
       opacity: 1;
       transform: translateY(0);
